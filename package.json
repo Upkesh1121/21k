@@ -3,10 +3,10 @@
   "private": true,
   "type": "module",
   "scripts": {
-  "prebuild": "chmod +x node_modules/.bin/vite || true",
-  "dev": "vite dev --port 3000",
-  "build": "vite build"
-},
+    "prebuild": "chmod +x node_modules/.bin/vite || true",
+    "dev": "vite dev --port 3000",
+    "build": "vite build"
+  },
   "dependencies": {
     "@tailwindcss/vite": "4.2.2",
     "@tanstack/react-router": "1.168.22",
