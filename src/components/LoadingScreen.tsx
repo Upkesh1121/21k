@@ -17,7 +17,7 @@ export function LoadingScreen() {
 
   return (
     <div className={`loading-screen ${fading ? 'fade-out' : ''}`}>
-      <div className="loading-logo">21K</div>
+      <img src="/logo.png" alt="21K Logo" className="loading-logo" />
       <p className="loading-tagline">Luxury Streetwear — Est. MMXXIV</p>
       <div className="loading-bar" />
     </div>

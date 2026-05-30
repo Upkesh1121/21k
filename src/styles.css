@@ -110,11 +110,16 @@ body {
   position: fixed;
   inset: 0;
   background: #080808;
+
   z-index: 99997;
+
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
+
+  gap: 5px;
+
   transition: opacity 0.8s ease, visibility 0.8s ease;
 }
 
@@ -124,24 +129,26 @@ body {
 }
 
 .loading-logo {
-  font-family: 'Bebas Neue', sans-serif;
-  font-size: clamp(5rem, 15vw, 12rem);
-  letter-spacing: 0.15em;
-  color: transparent;
-  -webkit-text-stroke: 1px #b8965a;
-  animation: logoReveal 1.2s cubic-bezier(0.16, 1, 0.3, 1) 0.3s forwards;
-  opacity: 0;
+  width: 420px;
+  height: auto;
+
+  margin-bottom: -10px;
+
+  animation: glow 2s ease-in-out infinite alternate;
 }
 
 .loading-tagline {
   font-family: 'DM Sans', sans-serif;
-  font-size: 0.65rem;
+
+  font-size: 14px;
+
   letter-spacing: 0.4em;
+
   color: #555;
+
   text-transform: uppercase;
-  margin-top: 1rem;
-  animation: fadeUp 0.8s ease 1.2s forwards;
-  opacity: 0;
+
+  margin-top: 0;
 }
 
 .loading-bar {
@@ -391,4 +398,13 @@ body {
   }
   .grain-overlay { animation: none; }
   .marquee-track { animation-duration: 60s; }
+}
+@keyframes glow {
+  from {
+    filter: drop-shadow(0 0 5px gold);
+  }
+
+  to {
+    filter: drop-shadow(0 0 25px gold);
+  }
 }

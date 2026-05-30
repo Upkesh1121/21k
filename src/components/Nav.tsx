@@ -28,9 +28,13 @@ export function Nav() {
       >
         <div className="max-w-[1400px] mx-auto px-6 md:px-10 flex items-center justify-between h-16 md:h-20">
           {/* Logo */}
-          <Link to="/" className="font-display text-2xl md:text-3xl tracking-[0.2em] text-white">
-            21K
-          </Link>
+          <Link to="/">
+  <img
+    src="/logo.png"
+    alt="21K Logo"
+    className="h-12 w-auto"
+  />
+</Link>
 
           {/* Desktop links */}
           <ul className="hidden md:flex items-center gap-10">
