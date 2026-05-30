@@ -52,9 +52,7 @@ This document helps AI agents understand the project structure, conventions, and
 │   └── styles.css  # Global styles: Tailwind, prose.
 ├── .gitignore  # Template for .gitignore: node_modules, dist, .env, .netlify, .tanstack, etc.
 ├── AGENTS.md  # This document provides an overview of the project structure for developers and AI agents working on this codebase.
-├── netlify.toml  # Netlify deployment config: [build]
-  command = "npm run build"
-  publish = "dist", and dev server settings (port 8888, target 3000).
+├── netlify.toml  # Netlify deployment config: build command (vite build), publish directory (dist/client), and dev server settings (port 8888, target 3000).
 ├── package.json  # Project manifest with TanStack Start, React 19, Vite 7, Tailwind CSS 4, and Netlify plugin dependencies; defines dev and build scripts.
 ├── pnpm-lock.yaml
 ├── tsconfig.json  # TypeScript config: ES2022 target, strict mode, @/* path alias for src/*, bundler module resolution.
@@ -86,9 +84,7 @@ Routes are defined by files in `src/routes/`:
 |------|---------|
 | `vite.config.ts` | Vite plugins: TanStack Start, Netlify, Tailwind, Content Collections |
 | `tsconfig.json` | TypeScript config with `@/*` path alias for `src/*` |
-| `netlify.toml` [build]
-  command = "npx vite build"
-  publish = "dist"
+| `netlify.toml` | Build command, output directory, dev server settings |
 | `content-collections.ts` | Zod schemas for jobs and education frontmatter |
 | `styles.css` | Tailwind imports + CSS custom properties (oklch colors) |
 
