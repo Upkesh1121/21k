@@ -1,6 +1,6 @@
 import { jsx, jsxs } from "react/jsx-runtime";
 import { Link } from "@tanstack/react-router";
-import { u as useCart } from "./router-DnDw5gcX.js";
+import { u as useCart } from "./router-C-VpF-Zt.js";
 import { useEffect } from "react";
 import "lucide-react";
 import "./products-9Z2Dmzon.js";

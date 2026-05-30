@@ -1,7 +1,7 @@
 import { jsxs, jsx } from "react/jsx-runtime";
 import { Link } from "@tanstack/react-router";
 import { Minus, Plus, Trash2, ArrowRight } from "lucide-react";
-import { u as useCart } from "./router-DnDw5gcX.js";
+import { u as useCart } from "./router-C-VpF-Zt.js";
 import { T as TSS_SERVER_FUNCTION, g as getServerFnById, c as createServerFn } from "../server.js";
 import { useState, useEffect } from "react";
 import "./products-9Z2Dmzon.js";

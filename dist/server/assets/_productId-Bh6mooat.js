@@ -3,7 +3,7 @@ import { Link } from "@tanstack/react-router";
 import { useState, useEffect } from "react";
 import { ChevronLeft, ChevronRight, Plus } from "lucide-react";
 import { p as products } from "./products-9Z2Dmzon.js";
-import { R as Route, u as useCart } from "./router-DnDw5gcX.js";
+import { R as Route, u as useCart } from "./router-C-VpF-Zt.js";
 function useSectionObserver() {
   useEffect(() => {
     const els = document.querySelectorAll(".section-enter");
